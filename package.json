@@ -73,7 +73,7 @@
   },
   "dependencies": {
     "@cycle/base": "^2.0.2",
-    "@cycle/most-adapter": "^1.1.1",
+    "@cycle/most-adapter": "^1.1.2",
     "most": "^0.19.7",
     "most-subject": "^4.1.1"
   }
