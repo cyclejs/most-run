@@ -134,8 +134,8 @@ describe('Cycle', function () {
 
       function main(sources) {
         return {
-          other: sources.other.take(1).startWith('a').map(() => {
-            throw new Error('malfunction');
+          other: sources.other.map(() => {
+            throw new Error('malfunction')
           })
         };
       }
@@ -143,14 +143,14 @@ describe('Cycle', function () {
         return most.of('b');
       }
 
+      Cycle.run(main, {other: driver});
+
       setTimeout(() => {
         sinon.assert.calledOnce(console.error);
         sinon.assert.calledWithExactly(console.error, sinon.match("malfunction"));
         sandbox.restore();
         done();
-      }, 1000);
-
-      Cycle.run(main, {other: driver});
+      }, 10);
     });
   });
 });
