@@ -150,7 +150,7 @@ describe('Cycle', function () {
 
         sandbox.restore();
         done();
-      }, 300);
+      }, 1000);
     });
   });
 });
