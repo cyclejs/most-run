@@ -1,6 +1,7 @@
 /* eslint-disable */
 'use strict';
 /* global describe, it */
+require('creed').shim()
 let assert = require('power-assert');
 let Cycle = require('../lib/index').default;
 let most = require('most');

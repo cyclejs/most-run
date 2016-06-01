@@ -56,6 +56,7 @@
     "commitizen": "^2.8.1",
     "conventional-changelog": "^1.1.0",
     "conventional-changelog-cli": "^1.2.0",
+    "creed": "^1.0.1",
     "cz-conventional-changelog": "^1.1.6",
     "ghooks": "^1.2.1",
     "mkdirp": "^0.5.1",
