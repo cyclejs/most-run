@@ -143,14 +143,14 @@ describe('Cycle', function () {
         return most.of('b');
       }
 
-      Cycle.run(main, {other: driver});
       setTimeout(() => {
         sinon.assert.calledOnce(console.error);
         sinon.assert.calledWithExactly(console.error, sinon.match("malfunction"));
-
         sandbox.restore();
         done();
-      }, 1000);
+      }, 100);
+
+      Cycle.run(main, {other: driver});
     });
   });
 });
