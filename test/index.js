@@ -148,7 +148,7 @@ describe('Cycle', function () {
         sinon.assert.calledWithExactly(console.error, sinon.match("malfunction"));
         sandbox.restore();
         done();
-      }, 100);
+      }, 1000);
 
       Cycle.run(main, {other: driver});
     });
