@@ -1,8 +1,8 @@
 /* eslint-disable */
 'use strict';
 /* global describe, it */
-let assert = require('assert');
-let Cycle = require('../src/index').default;
+let assert = require('power-assert');
+let Cycle = require('../lib/index').default;
 let most = require('most');
 let sinon = require('sinon');
 
@@ -150,7 +150,7 @@ describe('Cycle', function () {
 
         sandbox.restore();
         done();
-      }, 20);
+      }, 200);
     });
   });
 });
